@@ -1,0 +1,6 @@
+name: SaveFilePlugin
+version: 1.0.0
+main: io.github.fufuffu.SaveFilePlugin
+description: Simple plugin to save a file in the world
+author: Fufuffu
+api-version: '1.20'
