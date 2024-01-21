@@ -15,12 +15,12 @@ public class SaveFilePlugin extends JavaPlugin implements Listener {
         getComponentLogger().info(Component.text("Loaded save file plugin! :)"));
 
         Bukkit.getPluginManager().registerEvents(this, this);
-        Bukkit.getCommandMap().register("/", new SaveFileCommand(getComponentLogger(), Bukkit.getWorld("world")));
+        Bukkit.getCommandMap().register("/", new FileCommand(getComponentLogger(), Bukkit.getWorld("world")));
     }
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        event.getPlayer().sendMessage(Component.text("Hello " + event.getPlayer().getName() + ", this server has the savefile plugin enabled!"));
+        event.getPlayer().sendMessage(Component.text("Hello " + event.getPlayer().getName() + ", this server has the save file plugin enabled!"));
     }
 
     @EventHandler(ignoreCancelled = true)
